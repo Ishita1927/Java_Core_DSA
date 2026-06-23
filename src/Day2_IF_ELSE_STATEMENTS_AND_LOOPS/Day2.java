@@ -1,10 +1,11 @@
+package Day2_IF_ELSE_STATEMENTS_AND_LOOPS;
 
-class Hello {
+class Day2 {
     public static void main(String args[])
     {
         for(int i=1;i<=5;i++)
         {
-            System.out.println("DAY " + i);
+            System.out.println("DAY " + i)
 
             for(int j=1; j<=9; j++)
             {
@@ -13,3 +14,4 @@ class Hello {
         }
     }
 }
+
