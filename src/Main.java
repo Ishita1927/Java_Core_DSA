@@ -1,13 +1,15 @@
 
-class Hello
-{
-    public static void main (String args[]) {
-        int num1 = 25;
-        byte num2 = 127;
-        double num3 = 8.5;
-        char c = 'k';
-        long num4 = 5678l;
-        num2 = (byte) num1;
-        System.out.println(num2);
+class Hello {
+    public static void main(String args[])
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.println("DAY " + i);
+
+            for(int j=1; j<=9; j++)
+            {
+                System.out.println("  " + (j+8) + "-" + (j+9));
+            }
+        }
     }
 }
