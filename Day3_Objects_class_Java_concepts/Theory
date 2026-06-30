@@ -1,0 +1,34 @@
+1. *Class (The Blueprint)*
+A Class is just a blueprint, a template, or a recipe. It doesn't actually exist in the real world yet; it just describes what something will look like and what it will do when we finally build it.
+Think of the factory blueprints for an iPhone. The blueprint itself can't make a phone call or browse the web, but it lists all the features the phone should have (like a screen size, color, and a power button).
+Code Example:
+class Phone { // The blueprint says every phone will have these traits:
+    String color;
+    int batteryLevel;
+}
+
+2. *Object (The Actual Thing)*
+An Object is the real thing built from that blueprint. It takes up actual space in your computer's memory. If the class is the recipe, the object is the cake you just baked.
+The physical phone you are holding in your hand right now. It came from the factory blueprint, but it is a real, tangible object.
+Code Example:
+Phone myPhysicalPhone = new Phone();  // This line actually builds a real phone in the computer's memory
+
+3. *Instance (The Relationship)*
+An Instance is almost the exact same thing as an object, but "instance" is a word we use to describe its relationship to the class.
+Imagine you and your friend both buy the exact same model of a phone. Your phone is an object, and your friend's phone is an object. But your specific phone is a single instance of that phone model. Your phone might be painted blue, while your friend's is painted red. They are different instances of the same blueprint.
+Code Example:
+Phone myPhone = new Phone(); // 'myPhone' is an instance of the Phone class
+myPhone.color = "Blue";      // This specific instance is blue
+
+Phone friendsPhone = new Phone(); // 'friendsPhone' is another instance
+friendsPhone.color = "Red";       // This specific instance is red
+
+4. *Method (The Actions/Buttons)*
+A Method is an action. It's a block of code that tells the object to do something. If attributes (like color or battery) are the nouns, methods are the verbs.
+Pressing the camera button on your phone to take a picture, or plugging it in to charge. It's a behavior or a function of the phone.
+Code Example:
+class Phone {
+    void chargePhone() {  // This is a method (a behavior)
+        System.out.println("Phone is charging... Battery is now 100%!");
+    }
+}
